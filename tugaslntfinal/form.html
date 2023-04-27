@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <form action="https://jsonplaceholder.typicode.com/posts" method="dialog">
+      <i class="fas fa-paper-plane"></i>
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="0812-3456-7890" id="contact-phone" onkeyup="validatePhone()">
+        <span id="phone-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+        <span id="email-error"></span>
+      </div>   
+
+      <div class="input-group">
+        <label>Event Yang Diikuti</label>
+        <select name="" id="list" onchange="getSelectValue()">
+          <option value="" disabled selected hidden>Select your option</option>
+          <option value="1">Event Interview</option>
+          <option value="2">Event Meet&Greet</option>
+          <option value="3">Event Showcase</option>
+          <option value="4">Semua akan diikuti</option>
+        </select>
+        <span id="select-error"></span>
+      </div>
+
+    <button onclick="return validateForm()">Submit</button>
+    <span id="submit-error"></span>
+   
+  </form>
+  </div>
+   <script src="script.js"></script>
+</body>
+</html>

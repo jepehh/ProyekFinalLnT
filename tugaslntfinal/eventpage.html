@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuddingFest</title>
+    <link rel="stylesheet" href="eventpage.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <label class="logo">PuddingFest</label>
+        <ul>
+            <li><a href="landingpage.html">Home</a></li>
+            <li><a href="eventpage.html" class="active">Event Page</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="daftar">
+        <h1>Daftar Acara</h1>
+        <ul>
+            <li><a href="#" id="myLink" class="inactive" onclick="toggleExplanation1()">Acara Pembukaan</a></li>
+            <div id="explanation1" style="display: none;">
+                <h2>Untuk acara pembukaan, para pembicara yang terhormat akan memperkenalkan diri dan CEO PT. Meksiko akan mengucapkan beberapa kata sebelum memulai event selanjutnya.</h2>
+            </div>
+            <li><a href="#" id="myLink1" class="inactive" onclick="toggleExplanation2()">Event Interview</a></li>
+            <div id="explanation2" style="display: none;">
+                <h2>Untuk event interview, pembicara akan mengadakan sesi interview dengan interviewer. Setelah selesai, pembicara akan menerima Q&A dari penonton.</h2>
+            </div>
+            <li><a href="#" id="myLink2" class="inactive" onclick="toggleExplanation3()">Event Meet & Greet</a></li>
+            <div id="explanation3" style="display: none;">
+                <h2>Untuk event meet and greet, penonton akan berkesempatan untuk bertemu secara langsung dan foto dengan pembicara jika mereka menginginkannya.</h2>
+            </div>
+            <li><a href="#" id="myLink3" class="inactive" onclick="toggleExplanation4()">Event Showcase</a></li>
+            <div id="explanation4" style="display: none;">
+                <h2>Untuk event showcase, pembicara akan menunjukkan kreasi-kreasi terbarunya dan membiarkan para penonton mencicipinya.</h2>
+            </div>
+            <li><a href="#" id="myLink4" class="inactive" onclick="toggleExplanation5()">Acara Penutup</a></li>
+            <div id="explanation5" style="display: none;">
+                <h2>Untuk acara penutup, CEO PT. Meksiko akan memberikan salam dan foto dengan pembicara dan panitia akan mengadakan door prize.</h2>
+            </div>
+        </ul>
+    </div>
+    <div class="carousel">
+
+    </div>
+    <div class="timeline">
+
+    </div>
+    <div class="form">
+        <div class="text-box">
+            <h1>Are you ready to participate in PuddingFest?</h1>
+            <p>Meet one of the most prominent pastry chef in the world and learn from his advice!</p>
+            <a href="form.html" class="btn">Register Here!</a>
+        </div>
+    </div>
+    <script src="eventscript.js"></script>
+</body>
+</html>
